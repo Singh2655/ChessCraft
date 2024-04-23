@@ -1,4 +1,4 @@
-import { INIT_GAME, MOVE } from "./messages";
+import { INIT_GAME, MOVE, VALID_MOVE } from "./messages";
 import { Game } from "./Game";
 import { WebSocket } from "ws";
 
@@ -23,7 +23,7 @@ export class GameManager {
       console.log("hello");
       const message = JSON.parse(data.toString());
       console.log("this is message", message);
-      if (message.type === INIT_GAME) {
+      if (message.type === INIT_GAME){
         console.log(this.pendingUser);
         if (this.pendingUser) {
           const game = new Game(this.pendingUser, socket);

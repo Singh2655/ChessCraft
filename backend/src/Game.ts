@@ -1,4 +1,4 @@
-import { Chess } from "chess.js";
+import { Chess, Square } from "chess.js";
 import { WebSocket } from "ws";
 import { GAME_OVER, INIT_GAME, MOVE } from "./messages";
 import { Socket } from "socket.io-client";

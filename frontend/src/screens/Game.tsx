@@ -7,6 +7,7 @@ import { Chess } from "chess.js";
 export const INIT_GAME="init_game"
 export const MOVE="move"
 export const GAME_OVER="game_over"
+export const VALID_MOVE="valid-move"
 
 const Game = () => {
     
